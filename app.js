@@ -15,17 +15,21 @@ console.log(numbComputer)
 
 // richiamo elemento per il risultoto 
 let htmlElementRisultato = document.getElementById('risultato')
+console.log(htmlElementRisultato)
 
 // confronto numeri per capire chi ha vinto 
 if(numbUser > numbComputer){
     let esito = ('Complimenti hai vinto') 
+    htmlElementRisultato.innerHTML += esito
 } else if (numbUser < numbComputer){
     let esito = ('Peccato hai perso')
+    htmlElementRisultato.innerHTML += esito
 } else {
     let esito = ('Pareggio')
+    htmlElementRisultato.innerHTML += esito
 } 
 
     
-htmlElementRisultato.innerHTML += esito
+
 
 
