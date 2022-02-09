@@ -30,7 +30,7 @@
 // } 
 
 
-// esercizio mail
+// ESERCIZIO MAIL
 
 // arrey con databaseMail
 const databaseMail = [ 'mikemaignan@yahoo.it', 
@@ -42,21 +42,22 @@ console.log(databaseMail)
 
 
 // richiesta mail all'utente
-
 let userEmail = prompt("inserisci la tua e-mail")
-
+// dichiaro variabile risulato confronto
+let risultato = false
 // leggo le mail del databais e le controllo con quella dell'utente per confrontarle
-for (let i = 0;i<databaseMail.length;i++) {
-     
-    if (databaseMail[i] === userEmail){
-        alert('Sei dentro')
-        break
-    } else {
-        alert ('Sei fuori')
+for (let i = 0;i<databaseMail.length;i++) {  
+ if (userEmail === databaseMail[i]){
+        risultato = true
+    } 
     }
-}
 
-    
+    if ( risultato){
+        alert ('sei dentro')
+    } else {
+        alert ('sei fuori')
+    }
+
 
 
 
