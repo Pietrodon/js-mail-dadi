@@ -45,13 +45,14 @@ console.log(databaseMail)
 
 let userEmail = prompt("inserisci la tua e-mail")
 
-
+// leggo le mail del databais e le controllo con quella dell'utente per confrontarle
 for (let i = 0;i<databaseMail.length;i++) {
-    
-    if ([i] === userEmail){
+     
+    if (databaseMail[i] === userEmail){
         alert('Sei dentro')
+        break
     } else {
-        alert ('Il tuo indirizzo non risulta tra gli invitati')
+        alert ('Sei fuori')
     }
 }
 
